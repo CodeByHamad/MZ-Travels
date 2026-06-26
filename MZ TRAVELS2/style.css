@@ -1,0 +1,319 @@
+/* ================= CUSTOM VARIABLES ================= */
+:root {
+  --primary: #0F3D3E;
+  --secondary: #1ABC9C;
+  --accent: #F4C430;
+  --light: #F9FAFB;
+  --dark: #2C2C2C;
+}
+
+/* ================= BOOTSTRAP OVERRIDES ================= */
+.bg-primary {
+  background-color: var(--primary) !important;
+}
+
+.text-primary {
+  color: var(--primary) !important;
+}
+
+.btn-primary {
+  background-color: var(--primary) !important;
+  border-color: var(--primary) !important;
+}
+
+.btn-primary:hover {
+  background-color: #0a2a2b !important;
+  border-color: #0a2a2b !important;
+}
+
+.btn-secondary {
+  background-color: var(--secondary) !important;
+  border-color: var(--secondary) !important;
+}
+
+.btn-secondary:hover {
+  background-color: #17a085 !important;
+  border-color: #17a085 !important;
+}
+
+.btn-warning {
+  background-color: var(--accent) !important;
+  border-color: var(--accent) !important;
+  color: var(--primary) !important;
+}
+
+.btn-warning:hover {
+  background-color: #e6b82e !important;
+  border-color: #e6b82e !important;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* ================= NAVBAR STYLES ================= */
+.navbar {
+  padding: 15px 0;
+  transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 15px !important;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: var(--accent) !important;
+}
+
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.25);
+}
+
+/* ================= HERO SECTION ================= */
+.hero-section {
+  min-height: 100vh;
+  background-image: url("homepage.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.hero-overlay {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(11, 37, 69, 0.7));
+  padding: 20px;
+}
+
+.hero-section h1 {
+  text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
+  letter-spacing: -1px;
+}
+
+.hero-section p {
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive Hero Text */
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2.5rem !important;
+  }
+  
+  .hero-section p {
+    font-size: 1rem !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-section h1 {
+    font-size: 2rem !important;
+  }
+  
+  .hero-section {
+    background-attachment: scroll;
+  }
+}
+
+/* ================= TOUR CARDS ================= */
+.tour-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.tour-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15) !important;
+}
+
+.tour-card .card-img-top {
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.tour-card:hover .card-img-top {
+  transform: scale(1.05);
+}
+
+.tour-card .card-body {
+  padding: 1.5rem;
+}
+
+.tour-card .btn {
+  border-radius: 25px;
+  font-size: 14px;
+  padding: 10px 20px;
+}
+
+/* ================= GALLERY SECTION ================= */
+.gallery-item {
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+.gallery-item img {
+  height: 180px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.25);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: inherit;
+}
+
+.gallery-item:hover::after {
+  opacity: 1;
+}
+
+@media (max-width: 576px) {
+  .gallery-item img {
+    height: 120px;
+  }
+}
+
+/* ================= ABOUT SECTION ================= */
+.about-section {
+  background: linear-gradient(rgba(15, 61, 62, 0.85), rgba(15, 61, 62, 0.9)), url('land2.jpg') center/cover no-repeat;
+}
+
+.about-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.about-card p {
+  line-height: 1.8;
+  opacity: 0.9;
+}
+
+/* ================= CONTACT SECTION ================= */
+.form-control {
+  border: 2px solid #e9ecef;
+  border-radius: 10px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: var(--secondary);
+  box-shadow: 0 0 0 0.2rem rgba(26, 188, 156, 0.25);
+}
+
+/* ================= FOOTER ================= */
+footer {
+  background-color: var(--primary) !important;
+}
+
+footer a {
+  transition: all 0.3s ease;
+}
+
+footer a:hover {
+  transform: translateY(-2px);
+}
+
+/* ================= SMOOTH SCROLL ================= */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ================= ANIMATIONS ================= */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card, .gallery-item {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+/* ================= BUTTON EFFECTS ================= */
+.btn {
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+/* Service Buttons */
+.btn-success {
+  background-color: #1e7f63 !important;
+  border-color: #1e7f63 !important;
+}
+
+.btn-success:hover {
+  background-color: #17664f !important;
+  border-color: #17664f !important;
+}
+
+.btn-info {
+  background-color: #0d4c6a !important;
+  border-color: #0d4c6a !important;
+}
+
+.btn-info:hover {
+  background-color: #093a52 !important;
+  border-color: #093a52 !important;
+}
+
+/* ================= SCROLLBAR STYLING ================= */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--secondary);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
+}
+
+/* ================= SELECTION STYLING ================= */
+::selection {
+  background: var(--secondary);
+  color: white;
+}
+
+/* ================= UTILITIES ================= */
+.text-secondary {
+  color: var(--secondary) !important;
+}
+
+/* Back to top button smooth */
+a[href="#home"] {
+  scroll-behavior: smooth;
+}

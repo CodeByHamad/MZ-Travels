@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MZ Travels and Tours</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNavbar" data-bs-offset="100">
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top" id="mainNavbar">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand d-flex align-items-center" href="#home">
+                <img src="logo.png" alt="MZ Travels Logo" width="45" height="45" class="me-2">
+                <span class="fw-bold fs-4">MZ Travels</span>
+            </a>
+
+            <!-- Mobile Toggle Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navigation Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#national">National Tours</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#international">International Tours</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero-section d-flex align-items-center justify-content-center text-center text-white">
+        <div class="hero-overlay w-100 h-100 d-flex align-items-center justify-content-center">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-md-10">
+                        <h1 class="display-3 fw-bold mb-4">MZ Travels</h1>
+                        <h2 class="display-2 fw-bold mb-3">Explore Pakistan & The World</h2>
+                        <p class="lead mb-4">
+                            MZ Travels offers premium national and international tour packages
+                            with comfort, safety, and unforgettable experiences.
+                        </p>
+                        <a href="#services" class="btn btn-warning btn-lg px-5 py-3 fw-bold rounded-pill">
+                            <i class="bi bi-compass me-2"></i>Explore Tours
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="py-5 bg-light">
+        <div class="container text-center py-5">
+            <h2 class="display-5 fw-bold text-primary mb-3">Our Services</h2>
+            <p class="fs-4 text-muted mb-5">Choose the tour type that suits your journey</p>
+
+            <div class="row justify-content-center g-4">
+                <div class="col-md-5 col-lg-4">
+                    <a href="#national" class="btn btn-success btn-lg w-100 py-4 fs-5 fw-semibold shadow-sm">
+                        <i class="bi bi-geo-alt-fill me-2"></i>National Tours
+                    </a>
+                </div>
+                <div class="col-md-5 col-lg-4">
+                    <a href="#international" class="btn btn-info btn-lg w-100 py-4 fs-5 fw-semibold text-white shadow-sm">
+                        <i class="bi bi-globe me-2"></i>International Tours
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NATIONAL TOURS SECTION -->
+    <section id="national" class="py-5">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold text-primary">National Tours</h2>
+                <p class="fs-4 text-muted">Explore the breathtaking Northern Areas of Pakistan with our premium packages.</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Tour Card 1 - Hunza -->
+                <div class="col-sm-6 col-lg-4">
+                    <div class="card h-100 shadow-sm tour-card">
+                        <img src="hunza.jpg" class="card-img-top" alt="Hunza Valley">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold text-primary">Hunza Valley</h5>
+                            <p class="card-text text-muted flex-grow-1">Experience majestic mountains, serene lakes, and rich culture.</p>
+                            <a href="#contact" class="btn btn-secondary mt-auto">Book Now Only For 30000/head</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tour Card 2 - Skardu -->
+                <div class="col-sm-6 col-lg-4">
+                    <div class="card h-100 shadow-sm tour-card">
+                        <img src="skardu.jpg" class="card-img-top" alt="Skardu">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold text-primary">Skardu</h5>
+                            <p class="card-text text-muted flex-grow-1">Adventure and nature combined for an unforgettable journey.</p>
+                            <a href="#contact" class="btn btn-secondary mt-auto">Book Now Only For 35000/head</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tour Card 3 - Naran & Kaghan -->
+                <div class="col-sm-6 col-lg-4">
+                    <div class="card h-100 shadow-sm tour-card">
+                        <img src="naran.jpg" class="card-img-top" alt="Naran & Kaghan">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold text-primary">Naran & Kaghan</h5>
+                            <p class="card-text text-muted flex-grow-1">Beautiful valleys and scenic lakes perfect for relaxation.</p>
+                            <a href="#contact" class="btn btn-secondary mt-auto">Book Now Only For 30000/head</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tour Card 4 - Chitral -->
+                <div class="col-sm-6 col-lg-4">
+                    <div class="card h-100 shadow-sm tour-card">
+                        <img src="chitral.jpg" class="card-img-top" alt="Chitral">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold text-primary">Chitral</h5>
+                            <p class="card-text text-muted flex-grow-1">Explore the majestic mountains, rivers, and the rich Kalash culture.</p>
+                            <a href="#contact" class="btn btn-secondary mt-auto">Book Now Only For 40000/head</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tour Card 5 - Kashmir -->
+                <div class="col-sm-6 col-lg-4">
+                    <div class="card h-100 shadow-sm tour-card">
+                        <img src="kashmir.jpg" class="card-img-top" alt="Kashmir">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold text-primary">Kashmir</h5>
+                            <p class="card-text text-muted flex-grow-1">Serene lakes, lush greenery, and breathtaking landscapes await you.</p>
+                            <a href="#contact" class="btn btn-secondary mt-auto">Book Now Only For 20000/head</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tour Card 6 - Kalam -->
+                <div class="col-sm-6 col-lg-4">
+                    <div class="card h-100 shadow-sm tour-card">
+                        <img src="kalam.jpg" class="card-img-top" alt="Kalam">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold text-primary">Kalam</h5>
+                            <p class="card-text text-muted flex-grow-1">Peaceful valleys, rivers, and hills perfect for nature lovers.</p>
+                            <a href="#contact" class="btn btn-secondary mt-auto">Book Now Only For 25000/head</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INTERNATIONAL TOURS SECTION -->
+    <section id="international" class="py-5 bg-light">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold text-primary">International Tours</h2>
+                <p class="lead text-muted">Explore the world with MZ Travels. Choose from our exclusive international tour packages.</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Paris -->
+                <div class="col-sm-6 col-lg-4">
+                    <div class="card h-100 shadow-sm tour-card">
+                        <img src="paris.jpg" class="card-img-top" alt="Paris, France">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold text-primary">Paris, France</h5>
+                            <p class="card-text text-muted flex-grow-1">Visit the Eiffel Tower, museums, and charming streets of Paris.</p>
+                            <a href="#contact" class="btn btn-secondary mt-auto">Book Now Only For 150000/head</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- London -->
+                <div class="col-sm-6 col-lg-4">
+                    <div class="card h-100 shadow-sm tour-card">
+                        <img src="london.jpg" class="card-img-top" alt="London, UK">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold text-primary">London, UK</h5>
+                            <p class="card-text text-muted flex-grow-1">Experience historic landmarks, culture, and scenic river views.</p>
+                            <a href="#contact" class="btn btn-secondary mt-auto">Book Now Only For 175000/head</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Switzerland -->
+                <div class="col-sm-6 col-lg-4">
+                    <div class="card h-100 shadow-sm tour-card">
+                        <img src="switzerland.jpg" class="card-img-top" alt="Switzerland">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold text-primary">Switzerland</h5>
+                            <p class="card-text text-muted flex-grow-1">A stunning European country renowned for snow-capped mountains, charming towns, and natural beauty.</p>
+                            <a href="#contact" class="btn btn-secondary mt-auto">Book Now Only For 200000/head</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- New York -->
+                <div class="col-sm-6 col-lg-4">
+                    <div class="card h-100 shadow-sm tour-card">
+                        <img src="newyork.jpg" class="card-img-top" alt="New York, USA">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold text-primary">New York, USA</h5>
+                            <p class="card-text text-muted flex-grow-1">Enjoy the skyline, Broadway shows, and iconic city attractions.</p>
+                            <a href="#contact" class="btn btn-secondary mt-auto">Book Now Only For 200000/head</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tokyo -->
+                <div class="col-sm-6 col-lg-4">
+                    <div class="card h-100 shadow-sm tour-card">
+                        <img src="japan.jpg" class="card-img-top" alt="Tokyo, Japan">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold text-primary">Tokyo, Japan</h5>
+                            <p class="card-text text-muted flex-grow-1">Discover modern cities, culture, temples, and cherry blossoms.</p>
+                            <a href="#contact" class="btn btn-secondary mt-auto">Book Now Only For 100000/head</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dubai -->
+                <div class="col-sm-6 col-lg-4">
+                    <div class="card h-100 shadow-sm tour-card">
+                        <img src="dubai.jpg" class="card-img-top" alt="Dubai, UAE">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold text-primary">Dubai, UAE</h5>
+                            <p class="card-text text-muted flex-grow-1">Luxury shopping, desert safaris, and stunning skyscrapers.</p>
+                            <a href="#contact" class="btn btn-secondary mt-auto">Book Now Only For 750000/head</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Makkah -->
+                <div class="col-sm-6 col-lg-4">
+                    <div class="card h-100 shadow-sm tour-card">
+                        <img src="makkah.jpg" class="card-img-top" alt="Makkah, Saudi Arabia">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold text-primary">Makkah Mukarma, Saudi Arabia</h5>
+                            <p class="card-text text-muted flex-grow-1">The blessed city of the Holy Kaaba, visited by millions of Muslims for Umrah and Hajj.</p>
+                            <a href="#contact" class="btn btn-secondary mt-auto">Book Now Only For 150000/head</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Maldives -->
+                <div class="col-sm-6 col-lg-4">
+                    <div class="card h-100 shadow-sm tour-card">
+                        <img src="maldeves.jpg" class="card-img-top" alt="Maldives">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold text-primary">Maldives</h5>
+                            <p class="card-text text-muted flex-grow-1">Relax on white sandy beaches and crystal-clear waters.</p>
+                            <a href="#contact" class="btn btn-secondary mt-auto">Book Now Only For 135000/head</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY SECTION -->
+    <section id="gallery" class="py-5">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold text-primary">Tour Gallery</h2>
+                <p class="lead text-muted">Some of the unforgettable moments from our tours.</p>
+            </div>
+
+            <div class="row g-3">
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="gallery-item rounded overflow-hidden">
+                        <img src="hunza.jpg" class="img-fluid w-100" alt="Hunza Valley">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="gallery-item rounded overflow-hidden">
+                        <img src="kashmir.jpg" class="img-fluid w-100" alt="Kashmir">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="gallery-item rounded overflow-hidden">
+                        <img src="naran.jpg" class="img-fluid w-100" alt="Naran">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="gallery-item rounded overflow-hidden">
+                        <img src="skardu.jpg" class="img-fluid w-100" alt="Skardu">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="gallery-item rounded overflow-hidden">
+                        <img src="paris.jpg" class="img-fluid w-100" alt="Paris">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="gallery-item rounded overflow-hidden">
+                        <img src="germany.jpg" class="img-fluid w-100" alt="Germany">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="gallery-item rounded overflow-hidden">
+                        <img src="switzerland2.jpg" class="img-fluid w-100" alt="Switzerland">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="gallery-item rounded overflow-hidden">
+                        <img src="tokiyo.jpg" class="img-fluid w-100" alt="Tokyo">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="gallery-item rounded overflow-hidden">
+                        <img src="malaysia.jpg" class="img-fluid w-100" alt="Malaysia">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="gallery-item rounded overflow-hidden">
+                        <img src="maldives.avif" class="img-fluid w-100" alt="Maldives">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="gallery-item rounded overflow-hidden">
+                        <img src="china.jpg" class="img-fluid w-100" alt="China">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="gallery-item rounded overflow-hidden">
+                        <img src="madina.jpg" class="img-fluid w-100" alt="Madina">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="gallery-item rounded overflow-hidden">
+                        <img src="dubai.jpg" class="img-fluid w-100" alt="Dubai">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="py-5 about-section">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold text-white">About Us</h2>
+                <p class="lead text-white-50">Discover why MZ Travels is your trusted travel partner.</p>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="about-card rounded-4 p-4 p-md-5 text-white">
+                        <div class="mb-4">
+                            <h4 class="fw-bold mb-3"><i class="bi bi-people-fill me-2 text-warning"></i>Who We Are</h4>
+                            <p>MZ Travels is a premier travel and tours company specializing in both national and international trips. Our mission is to provide memorable travel experiences, combining comfort, adventure, and culture for every traveler.</p>
+                        </div>
+
+                        <div class="mb-4">
+                            <h4 class="fw-bold mb-3"><i class="bi bi-bullseye me-2 text-warning"></i>Our Mission</h4>
+                            <p>To make every journey unforgettable, offering personalized travel packages with top-notch service and reliability.</p>
+                        </div>
+
+                        <div>
+                            <h4 class="fw-bold mb-3"><i class="bi bi-eye-fill me-2 text-warning"></i>Our Vision</h4>
+                            <p class="mb-0">To be the leading travel company recognized for excellence in customer satisfaction and global travel experiences.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold text-primary">Contact Us</h2>
+                <p class="lead text-muted">Have questions? Get in touch with us for your next adventure!</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Contact Form -->
+                <div class="col-lg-6">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold text-primary mb-4">
+                                <i class="bi bi-envelope-fill me-2"></i>Send us a Message
+                            </h5>
+                            <form action="#" method="post">
+                                <div class="mb-3">
+                                    <input type="text" name="name" class="form-control form-control-lg" placeholder="Your Full Name" required>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="email" name="email" class="form-control form-control-lg" placeholder="Your Email Address" required>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="tel" name="phone" class="form-control form-control-lg" placeholder="Phone Number" required>
+                                </div>
+                                <div class="mb-3">
+                                    <textarea name="message" class="form-control form-control-lg" rows="4" placeholder="Your Message" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-secondary btn-lg w-100">
+                                    <i class="bi bi-send-fill me-2"></i>Send Message
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-lg-6">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold text-primary mb-4">
+                                <i class="bi bi-geo-alt-fill me-2"></i>Visit Our Office
+                            </h5>
+                            
+                            <div class="d-flex align-items-start mb-3">
+                                <i class="bi bi-pin-map-fill text-secondary fs-4 me-3"></i>
+                                <div>
+                                    <strong>Address:</strong><br>
+                                    <span class="text-muted">123 Main Street, Islamabad, Pakistan</span>
+                                </div>
+                            </div>
+                            
+                            <div class="d-flex align-items-start mb-3">
+                                <i class="bi bi-telephone-fill text-secondary fs-4 me-3"></i>
+                                <div>
+                                    <strong>Phone:</strong><br>
+                                    <span class="text-muted">+92 322 6289123</span>
+                                </div>
+                            </div>
+                            
+                            <div class="d-flex align-items-start mb-4">
+                                <i class="bi bi-envelope-at-fill text-secondary fs-4 me-3"></i>
+                                <div>
+                                    <strong>Email:</strong><br>
+                                    <span class="text-muted">info@mztravels.com</span>
+                                </div>
+                            </div>
+
+                            <!-- Map -->
+                            <div class="ratio ratio-16x9 rounded overflow-hidden mb-4">
+                                <iframe 
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3318.8112775572868!2d73.02207907450521!3d33.71383197328635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfbe5967d48243%3A0xcb2c90c562c4687e!2sAir%20University%20Islamabad!5e0!3m2!1sen!2s!4v1766535104652!5m2!1sen!2s" 
+                                    style="border:0;" 
+                                    allowfullscreen="" 
+                                    loading="lazy">
+                                </iframe>
+                            </div>
+
+                            <!-- Social Links -->
+                            <h6 class="fw-bold text-primary mb-3">Follow Our Journeys</h6>
+                            <div class="d-flex gap-2 flex-wrap">
+                                <a href="https://www.facebook.com/share/1E8dNhCMgg/" class="btn btn-outline-primary">
+                                    <i class="bi bi-facebook me-1"></i>Facebook
+                                </a>
+                                <a href="https://www.instagram.com/imran_hammad1?igsh=MXkwOXMzejUxbGFyZA==" class="btn btn-outline-danger">
+                                    <i class="bi bi-instagram me-1"></i>Instagram
+                                </a>
+                                <a href="https://x.com/hammad6289" class="btn btn-outline-dark">
+                                    <i class="bi bi-twitter-x me-1"></i>Twitter
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-primary text-white py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <p class="mb-0">&copy; 2025 MZ Travels and Tours. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#home" class="btn btn-outline-light btn-sm">
+                        <i class="bi bi-arrow-up"></i> Back to Top
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
